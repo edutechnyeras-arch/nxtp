@@ -72,25 +72,39 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 ;
 const metadata = {
-    title: 'v0 App',
-    description: 'Created with v0',
+    title: 'NPTEL Certificate Verification',
+    description: 'NPTEL Certificate Verification',
     generator: 'v0.app',
+    applicationName: 'NPTEL',
+    metadataBase: new URL('http://archivenptels.co.in'),
+    openGraph: {
+        title: 'NPTEL Certificate Verification',
+        description: 'Verify your NPTEL certificate',
+        url: 'http://archivenptels.co.in',
+        siteName: 'NPTEL',
+        locale: 'en_US',
+        type: 'website'
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'NPTEL Certificate Verification',
+        description: 'Verify your NPTEL certificate'
+    },
+    robots: {
+        index: false,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: false,
+            noimageindex: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1
+        }
+    },
     icons: {
-        icon: [
-            {
-                url: '/icon-light-32x32.png',
-                media: '(prefers-color-scheme: light)'
-            },
-            {
-                url: '/icon-dark-32x32.png',
-                media: '(prefers-color-scheme: dark)'
-            },
-            {
-                url: '/icon.svg',
-                type: 'image/svg+xml'
-            }
-        ],
-        apple: '/apple-icon.png'
+        icon: '/favicon.ico'
     }
 };
 function RootLayout({ children }) {
@@ -102,18 +116,18 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 41,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 39,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 38,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }

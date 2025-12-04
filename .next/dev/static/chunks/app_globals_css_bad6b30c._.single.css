@@ -723,10 +723,6 @@
     display: none;
   }
 
-  .inline-block {
-    display: inline-block;
-  }
-
   .inline-flex {
     display: inline-flex;
   }
@@ -1384,10 +1380,6 @@
 
   .overflow-y-auto {
     overflow-y: auto;
-  }
-
-  .rounded {
-    border-radius: .25rem;
   }
 
   .rounded-2xl {
