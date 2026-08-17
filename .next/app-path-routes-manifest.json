@@ -1,6 +1,7 @@
 {
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/noc/Ecertificate/document/[id]/route": "/noc/Ecertificate/document/[id]",
   "/noc/Ecertificate/page": "/noc/Ecertificate",
   "/page": "/"
 }

@@ -1,0 +1,3 @@
+module.exports=[91006,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(40583);a.n(d("[project]/Downloads/nptel_certificate-main/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},6259,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(40583);a.n(d("[project]/Downloads/nptel_certificate-main/node_modules/next/dist/client/components/builtin/global-error.js"))},27142,a=>{"use strict";a.i(91006);var b=a.i(6259);a.n(b)}];
+
+//# sourceMappingURL=7ba58_next_dist_client_components_builtin_global-error_63dc7d97.js.map
