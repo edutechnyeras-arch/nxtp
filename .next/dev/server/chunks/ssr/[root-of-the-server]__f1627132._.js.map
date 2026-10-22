@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/challachinnaobulesh/Downloads/nptel-certificate-viewer/app/page.tsx"],"sourcesContent":["import { redirect } from \"next/navigation\"\n\nexport const metadata = {\n  title: \"NPTEL Certificate Verification\",\n  description: \"Verify and view your NPTEL certificate\",\n}\n\nexport default function Home() {\n  redirect(\"https://archive.nptel.ac.in\")\n}\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,IAAA,iMAAQ,EAAC;AACX"}}]
-}
