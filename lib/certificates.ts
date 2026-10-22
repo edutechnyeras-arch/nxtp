@@ -33,7 +33,7 @@ export function getCertificateInfo(id: string): CertificateInfo | null {
 
   const sanitizedId = id.trim()
   const fileName = `${sanitizedId}.pdf`
-  const resolvedPath = path.resolve(CERTIFICATES_DIR, fileName)
+  let resolvedPath = path.resolve(CERTIFICATES_DIR, fileName)
 
   // Ensure resolved path is strictly within CERTIFICATES_DIR
   const normalizedCertDir = path.normalize(CERTIFICATES_DIR) + path.sep
@@ -43,7 +43,20 @@ export function getCertificateInfo(id: string): CertificateInfo | null {
 
   try {
     if (!fs.existsSync(resolvedPath)) {
-      return null
+      // Case-insensitive fallback for Linux/Vercel serverless environment
+      if (fs.existsSync(CERTIFICATES_DIR)) {
+        const files = fs.readdirSync(CERTIFICATES_DIR)
+        const match = files.find(
+          (f) => f.toLowerCase() === fileName.toLowerCase()
+        )
+        if (match) {
+          resolvedPath = path.resolve(CERTIFICATES_DIR, match)
+        } else {
+          return null
+        }
+      } else {
+        return null
+      }
     }
 
     const stats = fs.statSync(resolvedPath)

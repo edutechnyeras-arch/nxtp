@@ -1,4 +1,5 @@
-import { redirect } from "next/navigation"
+import { Suspense } from "react"
+import { CertificateViewer } from "@/components/certificate-viewer"
 
 export const metadata = {
   title: "NPTEL Certificate Verification",
@@ -6,5 +7,17 @@ export const metadata = {
 }
 
 export default function Home() {
-  redirect("https://archive.nptel.ac.in")
+  return (
+    <main className="min-h-screen bg-slate-50 py-10">
+      <Suspense
+        fallback={
+          <div className="min-h-screen flex items-center justify-center">
+            <div className="animate-pulse text-slate-500">Loading certificate viewer...</div>
+          </div>
+        }
+      >
+        <CertificateViewer />
+      </Suspense>
+    </main>
+  )
 }
