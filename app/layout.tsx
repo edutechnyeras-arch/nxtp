@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description: 'NPTEL Certificate Verification',
   generator: 'v0.app',
   applicationName: 'NPTEL',
-  metadataBase: new URL('http://archivenptels.co.in'),
+  metadataBase: new URL('https://www.archivenptels.co.in'),
   openGraph: {
     title: 'NPTEL Certificate Verification',
     description: 'Verify your NPTEL certificate',
-    url: 'http://archivenptels.co.in',
+    url: 'https://www.archivenptels.co.in',
     siteName: 'NPTEL',
     locale: 'en_US',
     type: 'website',
